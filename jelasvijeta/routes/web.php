@@ -9,8 +9,17 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
+
+
+
+Route::get('/meal', function () {
+    return view('meals.meal');
+});
+
+
+
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::resource('meal', 'MealsController');
+Route::get('/', 'MealsController@index');
+
