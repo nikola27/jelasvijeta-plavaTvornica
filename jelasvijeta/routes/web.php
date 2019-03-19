@@ -21,5 +21,5 @@ Route::get('/meal', function () {
 */
 
 //Route::resource('meal', 'MealsController');
-Route::get('/', 'MealsController@index');
+Route::get('meal', 'MealsController@index');
 
